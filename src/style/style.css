@@ -1,0 +1,212 @@
+body {
+  font-family: 'Balsamiq Sans', cursive;
+  font-family: 'Akaya Telivigala', cursive;
+  color: #484884;
+}
+
+body a:active, body a:focus {
+  outline: none;
+}
+
+body input, body textarea {
+  outline: none;
+}
+
+body input:active, body textarea:active {
+  outline: none;
+}
+
+body :focus {
+  outline: none;
+}
+
+body textarea {
+  resize: none;
+}
+
+body textarea {
+  resize: vertical;
+}
+
+body textarea {
+  resize: horizontal;
+}
+
+button {
+  width: 150px;
+  border: 3px solid #7644ce;
+  background-color: #8b6ac5;
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+button:hover {
+  background-color: #7644ce;
+}
+
+button:active {
+  border: 3px solid #8b6ac5;
+}
+
+.login {
+  border: 5px #99a6d4 solid;
+  background-color: #dcdde0;
+  padding: 20px;
+  width: 300px;
+  position: relative;
+  margin: auto;
+  border-radius: 15px;
+  color: #484884;
+  font-family: 'Balsamiq Sans', cursive;
+  font-family: 'Akaya Telivigala', cursive;
+}
+
+.login h3, .login a, .login button {
+  text-align: center;
+}
+
+.login h3 {
+  font-size: 30px;
+}
+
+.login a {
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.login a:active {
+  color: red;
+}
+
+.login h3, .login a, .login button {
+  font-family: 'Balsamiq Sans', cursive;
+  margin: 15px 0;
+}
+
+.login h5 {
+  margin: 5px 0;
+  font-size: 20px;
+}
+
+.login input {
+  width: 92%;
+  margin: 5px 0;
+  border: 2px solid #99a6d4;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.login input:valid {
+  border-color: green !important;
+}
+
+.login input:invalid {
+  border-color: red !important;
+}
+
+.login button {
+  width: 100%;
+}
+
+.registration {
+  display: none;
+  border: 5px #99a6d4 solid;
+  background-color: #dcdde0;
+  padding: 20px;
+  width: 300px;
+  position: relative;
+  margin: auto;
+  border-radius: 15px;
+  color: #484884;
+  font-family: 'Balsamiq Sans', cursive;
+  font-family: 'Akaya Telivigala', cursive;
+}
+
+.registration h3, .registration a, .registration button {
+  text-align: center;
+}
+
+.registration h3 {
+  font-size: 30px;
+}
+
+.registration a {
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.registration a:active {
+  color: red;
+}
+
+.registration h3, .registration a, .registration button {
+  font-family: 'Balsamiq Sans', cursive;
+  margin: 15px 0;
+}
+
+.registration h5 {
+  margin: 5px 0;
+  font-size: 20px;
+}
+
+.registration input {
+  width: 92%;
+  margin: 5px 0;
+  border: 2px solid #99a6d4;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.registration button {
+  width: 100%;
+}
+
+.menu {
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu ul li {
+  list-style-type: none;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.menu ul li:hover {
+  color: #8b6ac5;
+}
+
+.menu ul li:active {
+  color: #ce6cdb;
+}
+
+.main {
+  display: none;
+  text-align: center;
+  padding: 100px;
+}
+
+.mapPage, .clients {
+  display: none;
+}
+
+.clients button {
+  width: auto;
+}
+
+.clients .top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+/*# sourceMappingURL=style.css.map */

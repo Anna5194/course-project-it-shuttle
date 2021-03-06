@@ -1,0 +1,184 @@
+body{
+    a:active, a:focus { outline: none; }
+
+    input, textarea {outline:none;}
+    input:active, textarea:active {outline:none;}
+    :focus {outline:none;}
+    textarea {resize:none;}
+    textarea {resize:vertical;}
+    textarea {resize:horizontal;}
+
+    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Akaya Telivigala', cursive;
+    color: #484884;
+}
+
+button{
+    width: 150px;
+    border: 3px solid #7644ce;
+    background-color: #8b6ac5;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px;
+    &:hover{
+        background-color:#7644ce;
+    }
+    &:active{
+        border: 3px solid #8b6ac5;
+    }
+}
+
+.login{
+    // display: none;
+    border: 5px #99a6d4 solid;
+    background-color: #dcdde0;
+    padding: 20px;
+    width: 300px;
+    position: relative;
+    margin: auto;
+    border-radius: 15px;
+    color: #484884;
+    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Akaya Telivigala', cursive;
+
+    h3, a, button{
+        text-align: center;
+    }
+
+    h3{
+        font-size: 30px;
+    }
+
+    a{
+        font-size: 15px;
+        text-decoration: none;
+        &:active{
+            color:red;
+        }
+    }
+
+    h3,a,button{
+        font-family: 'Balsamiq Sans', cursive;
+        margin: 15px 0;
+    }
+
+    h5{
+        margin: 5px 0;
+        font-size: 20px;
+    }
+
+    input{
+        width: 92%;
+        margin: 5px 0;
+        border: 2px solid #99a6d4;
+        border-radius: 5px;
+        padding: 10px;
+        &:valid{
+            border-color: green !important;
+        }
+        &:invalid{
+            border-color: red !important;
+        }
+    }
+
+    button{
+        width: 100%;
+    }
+
+}
+
+.registration{
+    display: none;
+    border: 5px #99a6d4 solid;
+    background-color: #dcdde0;
+    padding: 20px;
+    width: 300px;
+    position: relative;
+    margin: auto;
+    border-radius: 15px;
+    color: #484884;
+    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Akaya Telivigala', cursive;
+
+    h3, a, button{
+        text-align: center;
+    }
+
+    h3{
+        font-size: 30px;
+    }
+
+    a{
+        font-size: 15px;
+        text-decoration: none;
+        &:active{
+            color:red;
+        }
+    }
+
+    h3,a,button{
+        font-family: 'Balsamiq Sans', cursive;
+        margin: 15px 0;
+    }
+
+    h5{
+        margin: 5px 0;
+        font-size: 20px;
+    }
+
+    input{
+        width: 92%;
+        margin: 5px 0;
+        border: 2px solid #99a6d4;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    button{
+        width: 100%;
+    }
+
+}
+
+.menu{
+    display: none;
+    // display: flex;
+    justify-content: space-between;
+
+    ul{
+        display: flex;
+        li{
+            list-style-type: none;
+            padding: 0 20px;
+            cursor: pointer;
+            &:hover{
+                color:#8b6ac5;
+            }
+            &:active{
+                color: #ce6cdb;
+            }
+        }
+    }
+}
+
+.main{
+    display: none;
+    text-align: center;
+    padding: 100px;
+}
+
+.mapPage, .clients{
+    display: none;
+}
+
+.clients{
+    button{
+        width: auto;
+    }
+    .top{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
+}

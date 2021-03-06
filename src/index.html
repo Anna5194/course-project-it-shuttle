@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="login" id="login">
+        <form action="">
+            <h3>Войти</h3>
+            <h5>Email:</h5>
+            <input type="email" placeholder="email" required id="emailLogin">
+            <h5>password:</h5>
+            <input type="password" placeholder="password" required id="passwordLogin"><br>
+            <p id="loginError"></p>
+            <a href="#" onclick="registrationOnSite()">Вы ещё не зарегистрированы?</a><br>
+            <button type="submit" onclick="checkLoginUser()">Войти</button>
+        </form>
+    </div>
+
+    <div class="registration" id='registration'>
+        <form action="">
+            <h3>Регистрация</h3>
+            <h5>Email:</h5>
+            <input type="email" placeholder="email" id="emailRegistration" onchange="checkMail()" required>
+            <h5>password:</h5>
+            <input type="password" placeholder="password" id="passwordRegistration" onchange="checkPassword()" required><br>
+            <h5>repeat password:</h5>
+            <input type="password" placeholder="password" id="repeatPasswordRegistration" onchange="comparisonOfTwoPasswords()" required><br>
+            <!-- <p id="registrationError"></p> -->
+            <a href="#" onclick="loginOnSite()">Вы уже зарегистрированы?</a><br>
+            <button type="submit" onclick="checkValidationForm()">Зарегистрироваться</button>
+        </form>
+    </div>
+
+    <div class="menu" id='menu'>
+        <ul>
+            <li id="main" onclick="openMainPage()">Главная</li>
+            <li id="clients" onclick="openClientsPage()">Клиенты</li>
+            <li id="mapOnSite" onclick="openMapPage()">Карта</li>
+        </ul>
+        <button id="exit" onclick="exitOfSite()">Выйти</button>
+    </div>
+
+    <div class="main" id='mainPage'>
+        <h1>Добро пожаловать на сайт!</h1>
+        <h2>Вы зашли с</h2>
+        <h2 id='device'></h2>
+        <h2>устройства</h2>
+    </div>
+
+    <div class="clients" id="clientsPage">
+        <h3 id="male"><a name="top"></a></h3>
+        <h3 id="female"></h3>
+        <h3 id="maxBalance"></h3>
+        <a href="#top"><button class="top">Наверх</button></a>
+    </div>
+
+    <div class="mapPage" id="mapPage">
+         <h1>Карта</h1>
+         <iframe src="https://www.google.com/maps/d/embed?mid=1MvO-exermOF5GuhSbGFnH3qDsBznjOm5&hl=ru&z=5" width="100%" height="480" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    <script src="index.js"></script>
+</body>
+</html>
